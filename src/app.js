@@ -1,21 +1,24 @@
-import React from "react";
-import Nav from "./components/nav/nav";
-import About from "./components/about/about";
-import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
-import Projects from "./components/projects/projects";
+
+import './App.css';
+import Nav from "./components/nav"
+import Header from "./components/header"
+import About from "./components/about"
+import Projects from "./components/projects"
+import Contact from "./components/contact"
+import Footer from "./components/footer"
 
 
-const App = () => {
+function App() {
   return (
-    <>
+    <div className="App">
       <Nav />
+      <Header />
       <About />
-      <Contact />
       <Projects />
+      <Contact />
       <Footer />
-    </>
+    </div>
   );
-};
+}
 
 export default App;
